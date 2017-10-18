@@ -6,16 +6,18 @@ public class Cliente {
 	private HashSet<Orcamento> listOrcamento = null;
 	private String email;
 	private int contato;
+	private String cpf;
 	
 	public Cliente() {
 		this.setListOrcamento(new HashSet<Orcamento>());
 	}
 	
-	public Cliente(String nome, String email, int contato) {
+	public Cliente(String nome, String email, int contato, String cpf) {
 		this();
 		this.setNome(nome);
 		this.setEmail(email);
 		this.setContato(contato);
+		this.setCpf(cpf);
 	}
 
 	public HashSet<Orcamento> getListOrcamento() {
@@ -50,6 +52,14 @@ public class Cliente {
 		this.contato = contato;
 	}
 	
+	public String getCpf() {
+		return cpf;
+	}
+
+	public void setCpf(String cpf) {
+		this.cpf = cpf;
+	}
+
 	public void addListOrcamento(Orcamento i) {
 		this.getListOrcamento().add(i);
 	}

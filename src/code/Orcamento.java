@@ -3,9 +3,11 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 public class Orcamento {
-	private String cliente;
+	private Cliente clienteObj;
+	
 	private LocalDate data;
 	private LocalDateTime hora;
+	
 	private int duracao;
 	private Evento tipo;
 
@@ -14,13 +16,15 @@ public class Orcamento {
 	private int qtdSalgado;
 
 	private float valorTotal;
+	
+	
 
-	public String getCliente() {
-		return cliente;
+	public Cliente getCliente() {
+		return clienteObj;
 	}
 
-	public void setCliente(String cliente) {
-		this.cliente = cliente;
+	public void setCliente(Cliente cliente) {
+		this.clienteObj = cliente;
 	}
 
 	public LocalDate getData() {
@@ -95,5 +99,4 @@ public class Orcamento {
 		} else
 			setQtdSalgado(10 * getQtdPessoa());
 	}
-
 }
