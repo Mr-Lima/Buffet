@@ -1,7 +1,8 @@
+package code;
 
 public class Evento {
 	private String nome;
-	
+
 	public Evento(String tipo) {
 		this.setNome(tipo);
 	}

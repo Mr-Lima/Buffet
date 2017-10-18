@@ -1,3 +1,4 @@
+package code;
 import java.util.List;
 
 public class Cliente {
@@ -5,6 +6,5 @@ public class Cliente {
 	private List<Orcamento> listOrcamento = null;
 	private String email;
 	private int contato;
-	
-	
+
 }

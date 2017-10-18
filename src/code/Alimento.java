@@ -1,10 +1,11 @@
+package code;
 
 public class Alimento {
 	private String nome;
 	private float custo;
 	private boolean salgado = false;
 	private boolean doce = false;
-	
+
 	public Alimento(String nome, float valor) {
 		this.setNome(nome);
 		this.setCusto(valor);
@@ -41,5 +42,5 @@ public class Alimento {
 	public void setDoce(boolean doce) {
 		this.doce = doce;
 	}
-	
+
 }
