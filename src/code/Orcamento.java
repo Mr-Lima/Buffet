@@ -16,8 +16,6 @@ public class Orcamento {
 	private int qtdSalgado;
 
 	private float valorTotal;
-	
-	
 
 	public Cliente getCliente() {
 		return clienteObj;

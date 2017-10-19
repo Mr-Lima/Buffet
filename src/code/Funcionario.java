@@ -7,8 +7,7 @@ public class Funcionario {
 	private String nome;
 	private String cpf;
 	private String contato;
-	private String usuario;
-	private String senha;
+
 	
 	private float salario;
 	private LocalDate diaPagamento;
@@ -17,7 +16,7 @@ public class Funcionario {
 	public Funcionario(){
 		list_de_presenca = new LinkedHashSet<Presenca>();
 	}
-
+	
 	public String getNome() {
 		return nome;
 	}
@@ -40,22 +39,6 @@ public class Funcionario {
 
 	public void setContato(String contato) {
 		this.contato = contato;
-	}
-
-	public String getUsuario() {
-		return usuario;
-	}
-
-	public void setUsuario(String usuario) {
-		this.usuario = usuario;
-	}
-
-	public String getSenha() {
-		return senha;
-	}
-
-	public void setSenha(String senha) {
-		this.senha = senha;
 	}
 
 	public float getSalario() {
@@ -82,6 +65,7 @@ public class Funcionario {
 		this.list_de_presenca = list_de_presenca;
 	}
 	
+
 	public void AddList_de_presenca(Presenca x) {
 		this.getList_de_presenca().add(x);
 	}
